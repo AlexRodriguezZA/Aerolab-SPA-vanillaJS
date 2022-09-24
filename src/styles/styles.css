@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap&#39');
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #3c484e;
+    font-family: 'Open Sans', sans-serif;
+    }
+
+main{
+    padding: 10px;
+    grid-template-columns: minmax(auto, 976px);
+    display: grid;
+    justify-content: center;
+}
+
+.Header-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0f31a1;
+}
+
+.Header-main h1{
+    color: #f4f4f4;
+}
+.Categorias{
+    display: flex;
+    flex-direction: row;
+}
+
+.Categorias p {
+    font-size:24px;
+    color:#616161;
+    line-height:48px;
+    text-align:left;
+}
+
+
+.Categorias span{
+    font-family:SourceSansPro-Regular;
+    font-size:24px;
+    color:#a3a3a3;
+    letter-spacing:-0.15px;
+    line-height:48px;
+    text-align:left;
+}
+
+.Categorias button{
+    background:#979d9e;
+    border-radius:100px;
+    width:130px;
+    height:45px;
+    font-size:20px;
+    color:#ffffff;
+    
+    line-height:48px;
+    text-align: center;
+
+}
+.button-container{
+    margin-top: 25px;
+    display: flex;
+    margin-left: 20px;
+    gap: 10px;
+}
+.Categorias .button-selected{
+    background:#0ad4fa;
+    border-radius:100px;
+    width:130px;
+    height:45px;
+    font-size:20px;
+    color:#ffffff;
+    
+    line-height:48px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/*POrductos container*/
+
+a{
+    text-decoration: none;
+}
+.Products-container{
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+    grid-row-gap: 1.5em;
+    display: grid;
+    
+}
+
+.Product-card{
+    margin-top: 1.25rem;
+    margin-bottom: 0.625rem;
+    margin-left: 10%;
+    box-shadow:2px 2px 4px 0 rgba(0,0,0,0.10);
+    
+}
+
+
+.Product-details
+{
+  padding-top:  1.5rem;
+  padding-bottom:  1rem;
+}
+
+.Product-Card img{
+    width: 100%;
+  height: 170px;
+}
+
+
+.Product-category{
+    font-size:16px;
+    color:#a3a3a3;
+    text-decoration: none;
+
+}
+
+.Product-name{
+    font-size:16px;
+    color:#616161;
+    text-decoration: none;
+}
+
+
+
+.Product-card:hover
+{
+  box-shadow: 10px 10px 18px 0 rgba(0,0,0,0.20);
+  transition: 200ms;
+
+}
+
+
+.Product-main{
+    text-decoration: none;
+    box-shadow: 8px 14px 38px rgba(39,44,49,.06), 1px 3px 8px rgba(39,44,49,.03);
+    border-radius: 5px;
+    margin: 0 0 20px 0;
+    display: flex;
+    animation-duration: 2s;
+    animation-name: fade;
+}
+
+
+.product-card img{
+    width: 100%;
+    height: 400px;
+    border-radius: 5px 5px 0 0;
+}
+
+.product-card h2{
+    font-size: 18px;
+    font-weight: 300;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+
+@keyframes fade {
+    from {
+    opacity: 0;
+    }
+    to {
+    opacity: 1;
+    }
+    }
